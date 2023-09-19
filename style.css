@@ -7,7 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.edit-mode{
+  background-color:  grey;
+}
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -26,12 +28,14 @@ header {
 header h1 {
   font-weight: 300;
   margin-left: 10px;
+  color: white;
 }
 
 .container {
   max-width: 500px;
   margin: 30px auto;
   padding: 20px;
+  background: #262626;
 }
 
 /* Form & Input */
@@ -43,8 +47,14 @@ header h1 {
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
+  transition-duration: 0.4s;
 }
+.form-input:hover{
+  transform: translateY(-8px);
+  background-color: #262626;
+  color: white;
 
+}
 .form-input-filter {
   margin-top: 20px;
   width: 100%;
@@ -55,6 +65,7 @@ header h1 {
   border-bottom: 1px solid #ccc;
   background: transparent;
   outline: none;
+  color: white;
 }
 
 /* Buttons */
@@ -65,10 +76,13 @@ header h1 {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+
+  transition-duration: 0.4s;
 }
 
-.btn:hover {
-  background-color: #444;
+.btn:hover{
+  background-color: #339946;
+  transform: translateY(-8px);
 }
 
 .btn-link {
@@ -78,6 +92,7 @@ header h1 {
   border: none;
   padding: 0;
   cursor: pointer;
+  color: white;
 }
 
 .btn-clear {
@@ -85,7 +100,7 @@ header h1 {
   width: 100%;
   font-size: 16px;
   background-color: transparent;
-  color: #333;
+  color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px 20px;
@@ -94,6 +109,8 @@ header h1 {
 
 .btn-clear:hover {
   background-color: #f1f1f1;
+  color: black;
+  transform: translateY(-8px);
 }
 
 .text-red {
@@ -106,6 +123,7 @@ header h1 {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
+  color: white;
 }
 
 .items li {
@@ -117,6 +135,10 @@ header h1 {
   padding: 10px 15px;
   margin: 0 5px 20px;
   font-weight: 700;
+}
+.items li:hover{
+  background-color: #339946;
+  transform: translateY(-8px);
 }
 
 @media (max-width: 500px) {

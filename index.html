@@ -12,13 +12,16 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    
     <title>Shopping List</title>
   </head>
   <body>
-    <div class="container">
+    
+    <div class="container" id="contain">
       <header>
-        <img src="images/note.png" alt="" />
+        <i class="fa-solid fa-cart-shopping" style="color: #339946;"></i>
         <h1>Shopping List</h1>
+        
       </header>
       <form id="item-form">
         <div class="form-control">
@@ -47,7 +50,7 @@
       </div>
 
       <ul id="item-list" class="items">
-        <li>
+        <!--<li>
           Apples
           <button class="remove-item btn-link text-red">
             <i class="fa-solid fa-xmark"></i>
@@ -70,12 +73,12 @@
           <button class="remove-item btn-link text-red">
             <i class="fa-solid fa-xmark"></i>
           </button>
-        </li>
+        </li>-->
       </ul>
 
       <button id="clear" class="btn-clear">Clear All</button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
